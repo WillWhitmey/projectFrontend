@@ -4,15 +4,16 @@
     <img src="{{rental.image}}" alt="">
     <small>View Larger</small>
   </a> -->
-  <h3>{{rental.commit.author.username}}</h3>
-  <!-- <div class="detail owner">
-    <span>Owner:</span> {{rental.owner}}
+  <h3>{{rental.commit.message}}</h3>
+  <div class="detail owner">
+    <span>Name:</span> {{rental.commit.author.name}}
   </div>
   <div class="detail type">
-    <span>Type:</span> {{rental.type}}
+    <span>Application:</span> {{rental.commit.application}}
   </div>
-  <div class="detail location">
-    <span>Location:</span> {{rental.city}}
+  <!-- <div class="detail location">
+    <span>Details:</span>
+      {{rental.city}}
   </div>
   <div class="detail bedrooms">
     <span>Number of bedrooms:</span> {{rental.bedrooms}}
