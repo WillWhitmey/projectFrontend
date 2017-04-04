@@ -1,9 +1,28 @@
 <div class="jumbo">
   <h2>Welcome To Lysium!</h2>
   <p>Below are all the changes that are in test but not in production.</p>
-  {{#link-to 'about' class="button"}}
-    About Us
-  {{/link-to}}
+  Environment: <select>
+    <option value="volvo">Test</option>
+    <option value="saab">Production</option>
+    <option value="mercedes">Sandbox</option>
+  </select>
+  <br>
+  Application: <select>
+    <option value="volvo">API_APPLICATION</option>
+    <option value="saab">ADMIN_API_APPLICATION</option>
+    <option value="mercedes">CUSTOMER_SERVICE_APPLICATION</option>
+    <option value="volvo">EXECUTION_SETTLEMENT_APPLICATION</option>
+    <option value="volvo">INVESTOR_APPLICATION</option>
+    <option value="volvo">ISA_APPLICATION</option>
+    <option value="volvo">PAYMENTS_APPLICATION</option>
+    <option value="volvo">SECURITY_APPLICATION</option>
+    <option value="volvo">WORKFLOW_MANAGER_APPLICATION</option>
+    <option value="volvo">REPORTING_BILLING_APPLICATION</option>
+    <option value="volvo">ADMIN_UI</option>
+    <option value="volvo">INSIGHT_UI</option>
+    <option value="volvo">INVESTMENTS_UI</option>
+    <option value="volvo">WEBSITE_UI</option>
+  </select>
 </div>
 
 {{#each model as |rentalUnit|}}

@@ -1,16 +1,17 @@
 {{yield}}
 <article class="listing">
-  <!-- <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
-    <img src="{{rental.image}}" alt="">
-    <small>View Larger</small>
-  </a> -->
-  <h3>{{rental.commit.message}}</h3>
+  <h3 class="message">{{rental.commit.message}}</h3>
   <div class="detail owner">
     <span>Name:</span> {{rental.commit.author.name}}
   </div>
   <div class="detail type">
     <span>Application:</span> {{rental.commit.application}}
   </div>
+  <br>
+  <button class="button" {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
+    <!-- <img src="{{rental.image}}" alt=""> -->
+    Details
+  </button>
   <!-- <div class="detail location">
     <span>Details:</span>
       {{rental.city}}
