@@ -1,0 +1,80 @@
+<div class="jumbo">
+  <h2>Welcome To Lysium!</h2>
+  <p>Below are all the changes that are in test but not in production.</p>
+  <br>
+  <button class="links">
+    {{#link-to 'api-application'}}
+      API Application
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'admin-api-application'}}
+      admin-api-application
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'customer-service-application'}}
+      customer-service-application
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'execution-settlement-application'}}
+      execution-settlement-application
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'investor-application'}}
+      investor-application
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'isa-application'}}
+      isa-application
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'payments-application'}}
+      payments-application
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'security-application'}}
+      security-application
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'workflow-manager-application'}}
+      workflow-manager-application
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'reporting-billing-application'}}
+      reporting-billing-application
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'admin-ui'}}
+      admin-ui
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'insight-ui'}}
+      insight-ui
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'investments-ui'}}
+      investments-ui
+    {{/link-to}}
+  </button>
+  <button class="links">
+    {{#link-to 'website-ui'}}
+      website-ui
+    {{/link-to}}
+  </button>
+</div>
+
+{{#each model as |rentalUnit|}}
+  {{rental-listing rental=rentalUnit}}
+{{/each}}
+{{outlet}}
