@@ -1,8 +1,13 @@
 /* eslint-env node */
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var env = EmberApp.env();
+var isProductionLikeBuild = env === 'production';
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    sassOptions: {
+      sourceMap: !isProductionLikeBuild
+    },
     // Add options here
   });
 

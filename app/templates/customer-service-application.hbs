@@ -2,25 +2,36 @@
   <h2>Welcome To Lysium!</h2>
   <p>Below are all the changes that are in test but not in production.</p>
   <br>
-  <!-- Application: <select>
-    <option value="API_APPLICATION"></option>
-    <option value="ADMIN_API_APPLICATION">ADMIN_API_APPLICATION</option>
-    <option value="CUSTOMER_SERVICE_APPLICATION">CUSTOMER_SERVICE_APPLICATION</option>
-    <option value="EXECUTION_SETTLEMENT_APPLICATION">EXECUTION_SETTLEMENT_APPLICATION</option>
-    <option value="INVESTOR_APPLICATION">INVESTOR_APPLICATION</option>
-    <option value="ISA_APPLICATION">ISA_APPLICATION</option>
-    <option value="PAYMENTS_APPLICATION">PAYMENTS_APPLICATION</option>
-    <option value="SECURITY_APPLICATION">SECURITY_APPLICATION</option>
-    <option value="WORKFLOW_MANAGER_APPLICATION">WORKFLOW_MANAGER_APPLICATION</option>
-    <option value="REPORTING_BILLING_APPLICATION">REPORTING_BILLING_APPLICATION</option>
-    <option value="ADMIN_UI">ADMIN_UI</option>
-    <option value="INSIGHT_UI">INSIGHT_UI</option>
-    <option value="INVESTMENTS_UI">INVESTMENTS_UI</option>
-    <option value="WEBSITE_UI">WEBSITE_UI</option>
-  </select>14 -->
-  <button class="links">
+
+
+  <h1>Links and Buttons</h1>
+  <section class="links-buttons">
+    <section>
+      <h2>Links</h2>
+      {{#panel/panel-content}}
+        <a href="#">A link</a>.
+      {{/panel/panel-content}}
+    </section>
+    <section>
+      <h2>Buttons</h2>
+      {{#panel/panel-content}}
+        <div class="notes">
+          Buttons should be right aligned, with the primary buttons furthest to the right.
+        </div>
+        {{#button-set}}
+          {{simple-button type="secondary" value="Secondary button"}}
+          {{simple-button type="info" value="Info button"}}
+          {{simple-button type="primary" disabled=true value="Disabled primary button"}}
+          {{simple-button type="primary" value="Primary button"}}
+        {{/button-set}}
+      {{/panel/panel-content}}
+    </section>
+  </section>
+
+
+  <button class="loading-indicator-pane">
     {{#link-to 'api-application'}}
-      API Application
+      {{simple-button type="primary" value="Primary button"}}
     {{/link-to}}
   </button>
   <button class="links">
