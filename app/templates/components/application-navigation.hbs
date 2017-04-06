@@ -1,3 +1,4 @@
+{{yield}}
 <div class="jumbo">
   <h2>Welcome To Lysium!</h2>
   <p>Below are all the changes that are in test but not in production.</p>
@@ -74,7 +75,30 @@
   </button>
 </div>
 
+<h1>Links and Buttons</h1>
+<section class="links-buttons">
+  <section>
+    <h2>Links</h2>
+    {{#panel/panel-content}}
+      <a href="#">A link</a>.
+    {{/panel/panel-content}}
+  </section>
+  <section>
+    <h2>Buttons</h2>
+    {{#panel/panel-content}}
+      <div class="notes">
+        Buttons should be right aligned, with the primary buttons furthest to the right.
+      </div>
+      {{#button-set}}
+        {{simple-button type="secondary" value="Secondary button"}}
+        {{simple-button type="info" value="Info button"}}
+        {{simple-button type="primary" disabled=true value="Disabled primary button"}}
+        {{simple-button type="primary" value="Primary button"}}
+      {{/button-set}}
+    {{/panel/panel-content}}
+  </section>
+</section>
+
 {{#each model as |rentalUnit|}}
   {{rental-listing rental=rentalUnit}}
 {{/each}}
-{{outlet}}
