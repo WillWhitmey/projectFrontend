@@ -2,102 +2,64 @@
 <div class="jumbo">
   <h2>Welcome To Lysium!</h2>
   <p>Below are all the changes that are in test but not in production.</p>
-  <br>
-  <button class="links">
-    {{#link-to 'api-application'}}
-      API Application
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'admin-api-application'}}
-      admin-api-application
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'customer-service-application'}}
-      customer-service-application
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'execution-settlement-application'}}
-      execution-settlement-application
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'investor-application'}}
-      investor-application
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'isa-application'}}
-      isa-application
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'payments-application'}}
-      payments-application
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'security-application'}}
-      security-application
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'workflow-manager-application'}}
-      workflow-manager-application
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'reporting-billing-application'}}
-      reporting-billing-application
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'admin-ui'}}
-      admin-ui
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'insight-ui'}}
-      insight-ui
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'investments-ui'}}
-      investments-ui
-    {{/link-to}}
-  </button>
-  <button class="links">
-    {{#link-to 'website-ui'}}
-      website-ui
-    {{/link-to}}
-  </button>
-</div>
+  <div>
+    {{#simple-button-link value="API APPLICATION" linkTo="api-application" class="willsButton"}}
+      API-Application
+    {{/simple-button-link}}
 
-<h1>Links and Buttons</h1>
-<section class="links-buttons">
-  <section>
-    <h2>Links</h2>
-    {{#panel/panel-content}}
-      <a href="#">A link</a>.
-    {{/panel/panel-content}}
-  </section>
-  <section>
-    <h2>Buttons</h2>
-    {{#panel/panel-content}}
-      <div class="notes">
-        Buttons should be right aligned, with the primary buttons furthest to the right.
-      </div>
-      {{#button-set}}
-        {{simple-button type="secondary" value="Secondary button"}}
-        {{simple-button type="info" value="Info button"}}
-        {{simple-button type="primary" disabled=true value="Disabled primary button"}}
-        {{simple-button type="primary" value="Primary button"}}
-      {{/button-set}}
-    {{/panel/panel-content}}
-  </section>
-</section>
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="admin-api-application" class="willsButton"}}
+      Admin-API-Application
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="customer-service-application" class="willsButton"}}
+      Customer-Service-Application
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="execution-settlement-application" class="willsButton"}}
+      Execution-Settlement-Application
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="investor-application" class="willsButton"}}
+      Investor-Application
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="isa-application" class="willsButton"}}
+      ISA-Application
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="payments-application" class="willsButton"}}
+      Payments-Application
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="security-application" class="willsButton"}}
+      Security-Application
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="workflow-manager-application" class="willsButton"}}
+      Workflow-Manager-Application
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="reporting-billing-application" class="willsButton"}}
+      Reporting-Billing-Application
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="admin-ui" class="willsButton"}}
+      Admin-UI
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="insight-ui" class="willsButton"}}
+      Insight-UI
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="investments-ui" class="willsButton"}}
+      Investments-UI
+    {{/simple-button-link}}
+
+    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="website-ui" class="willsButton"}}
+      website-ui
+    {{/simple-button-link}}
+  </div>
+</div>
 
 {{#each model as |rentalUnit|}}
   {{rental-listing rental=rentalUnit}}
