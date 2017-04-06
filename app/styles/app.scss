@@ -24,3 +24,15 @@
 @import "ember-cli-goji-common/components/expandable-content";
 @import "ember-cli-goji-common/components/originator-badge";
 @import "ember-cli-goji-common/components/application-footer";
+
+.listing, .jumbo {
+  text-align: center;
+}
+
+img {
+  height: 50px;
+}
+
+body {
+  /*background-color: #3B5998;*/
+}
