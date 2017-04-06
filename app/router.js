@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('rentals');
+  this.route('home');
   this.route('api-application');
   this.route('admin-api-application');
   this.route('customer-service-application');
