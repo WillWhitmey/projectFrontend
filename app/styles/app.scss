@@ -39,4 +39,15 @@ body {
 
 .willsButton {
   display: inline-block;
+  // background-color: #0277BD;
+}
+
+.simple-button.btn-primary {
+  background-color: #0277BD;
+  border-color: #0277BD;
+}
+
+.simple-button.btn-primary:hover {
+  background-color: #4C626D;
+  border-color: #4C626D;
 }

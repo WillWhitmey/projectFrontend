@@ -8,7 +8,14 @@
     <span>Application:</span> {{rental.commit.application}}
   </div>
   <br>
-  <button class="button" {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
-    Details
-  </button>
+  {{#simple-button class="willsButton"}}
+    Expand
+  {{/simple-button}}
 </article>
+
+<!-- {{#if isExpanded}}
+  <div class='body'>{{body}}</div>
+  <button {{action 'contract'}}>Contract</button>
+{{else}}
+  <button {{action 'expand'}}>Show More...</button>
+{{/if}} -->

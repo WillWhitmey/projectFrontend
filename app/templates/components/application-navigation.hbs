@@ -3,44 +3,46 @@
   <h2>Welcome To Lysium!</h2>
   <p>Below are all the changes that are in test but not in production.</p>
   <div>
-    {{#simple-button-link value="API APPLICATION" linkTo="api-application" class="willsButton"}}
-      API-Application
-    {{/simple-button-link}}
+    {{#each applicationNames as |applicationName|}}
+    {{#link-to 'changes.application-changes' applicationName class="willsButton"}}
+      {{applicationName}}
+    {{/link-to}}
+    {{/each}}
 
-    {{#simple-button-link type="primary" value="API APPLICATION" linkTo="admin-api-application" class="willsButton"}}
-      Admin-API-Application
+    <!-- {{#simple-button-link type="primary" value="API APPLICATION" linkTo="admin-api-application" class="willsButton"}}
+      ADMIN_API_APPLICATION
     {{/simple-button-link}}
 
     {{#simple-button-link type="primary" value="API APPLICATION" linkTo="customer-service-application" class="willsButton"}}
-      Customer-Service-Application
+      CUSTOMER_SERVICE_APPLICATION
     {{/simple-button-link}}
 
     {{#simple-button-link type="primary" value="API APPLICATION" linkTo="execution-settlement-application" class="willsButton"}}
-      Execution-Settlement-Application
+      EXECUTION_SETTLEMENT_APPLICATION
     {{/simple-button-link}}
 
     {{#simple-button-link type="primary" value="API APPLICATION" linkTo="investor-application" class="willsButton"}}
-      Investor-Application
+      INVESTOR_APPLICATION
     {{/simple-button-link}}
 
     {{#simple-button-link type="primary" value="API APPLICATION" linkTo="isa-application" class="willsButton"}}
-      ISA-Application
+      ISA_APPLICATION
     {{/simple-button-link}}
 
     {{#simple-button-link type="primary" value="API APPLICATION" linkTo="payments-application" class="willsButton"}}
-      Payments-Application
+      PAYMENTS_APPLICATION
     {{/simple-button-link}}
 
     {{#simple-button-link type="primary" value="API APPLICATION" linkTo="security-application" class="willsButton"}}
-      Security-Application
+      SECURITY_APPLICATION
     {{/simple-button-link}}
 
     {{#simple-button-link type="primary" value="API APPLICATION" linkTo="workflow-manager-application" class="willsButton"}}
-      Workflow-Manager-Application
+      WORKFLOW_MANAGER_APPLICATION
     {{/simple-button-link}}
 
     {{#simple-button-link type="primary" value="API APPLICATION" linkTo="reporting-billing-application" class="willsButton"}}
-      Reporting-Billing-Application
+      REPORTING_BILLING_APPLICATION
     {{/simple-button-link}}
 
     {{#simple-button-link type="primary" value="API APPLICATION" linkTo="admin-ui" class="willsButton"}}
@@ -56,8 +58,8 @@
     {{/simple-button-link}}
 
     {{#simple-button-link type="primary" value="API APPLICATION" linkTo="website-ui" class="willsButton"}}
-      website-ui
-    {{/simple-button-link}}
+      Website-UI
+    {{/simple-button-link}} -->
   </div>
 </div>
 

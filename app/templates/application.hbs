@@ -1,6 +1,6 @@
 <div class="container">
   <div class="menu">
-    {{#link-to 'index'}}
+    {{#link-to 'changes'}}
       <h1>
         <img src="https://static.gojip2p.net/public-site/assets/images/goji-1fea05668812be6582841b5d1335a930.png" alt="">
       </h1>
@@ -18,3 +18,17 @@
     {{outlet}}
   </div>
 </div>
+
+<!--
+{{#application-header applicationName='Application Name' enabledUserActions=enabledUserActions}}
+  <li>{{#link-to 'styleguide'}}Active{{/link-to}}</li>
+  <li>{{#link-to 'styleguide.dummy1'}}Link 2{{/link-to}}</li>
+  <li class="parent">
+    {{#link-to 'styleguide.dummy2'}}Nested{{/link-to}}
+    <ul>
+      <li>{{#link-to 'styleguide.dummy1'}}Child link 1{{/link-to}}</li>
+      <li>{{#link-to 'styleguide.dummy2'}}Child link 2{{/link-to}}</li>
+    </ul>
+  </li>
+{{/application-header}}
+{{outlet}} -->
