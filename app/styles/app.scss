@@ -24,6 +24,7 @@
 @import "ember-cli-goji-common/components/expandable-content";
 @import "ember-cli-goji-common/components/originator-badge";
 @import "ember-cli-goji-common/components/application-footer";
+// @import "ember-cli-goji-common/components/expandable-content";
 
 .listing, .jumbo {
   text-align: center;
@@ -39,6 +40,10 @@ body {
 
 .willsButton {
   display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  padding: 3px 3px 3px 3px;
+  border: solid 1px grey;
   // background-color: #0277BD;
 }
 

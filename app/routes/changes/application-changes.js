@@ -15,3 +15,24 @@ export default Route.extend({
         });
   }
 });
+
+
+
+
+// import Ember from 'ember';
+//
+// export default Ember.Route.extend({
+//
+//   userData: Ember.inject.service(),
+//   originatorId: Ember.computed.alias('userData.originatorId'),
+//   controllerName: 'shared.ticketsView',
+//   templateName: 'shared.workflowsView',
+//
+//   model() {
+//     return this.store.query('investor.workflow', {
+//       originatorId: this.get('originatorId'),
+//       complete: false
+//     });
+//   }
+//
+// });
