@@ -1,9 +1,8 @@
 import DS from 'ember-data';
-import Ember from 'ember';
 
-function randomId() {
-  return Math.random().toString(36).substring(7);
-}
+// function randomId() {
+//   return Math.random().toString(36).substring(7);
+// }
 
 export default DS.RESTSerializer.extend({
 
