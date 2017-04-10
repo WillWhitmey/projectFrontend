@@ -5,7 +5,7 @@
   <div>
     {{#each applicationNames as |applicationName|}}
     {{#link-to 'changes.application-changes' applicationName class="willsButton"}}
-      {{t applicationName}}
+      {{applicationName}}
     {{/link-to}}
     {{/each}}
   </div>
