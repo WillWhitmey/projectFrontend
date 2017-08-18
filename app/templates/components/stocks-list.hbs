@@ -1,7 +1,10 @@
-{{#each stocks.stocks as |stock|}}
-  {{stock.name}}
-  {{stock.price}}
-{{/each}}
-
-{{list}}
-{{stocks.name}}
+<ul>
+  {{#each stocks.stocks as |stock|}}
+    <div class="">
+      <li>{{stock.name}}</li>
+      <li>{{stock.price}}</li>
+    </div>
+    <br>
+  {{/each}}
+</ul>
+<h3><button {{action "buyStock"}}>Buy Apple</button></h3>
