@@ -8,6 +8,10 @@ export default Ember.Component.extend({
 
   stocks: null,
 
+  id: null,
+  name: null,
+  price: null,
+
   init() {
     this._super(...arguments);
     $.getJSON('http://localhost:4567/stocks/').then(data => {
@@ -23,8 +27,20 @@ export default Ember.Component.extend({
         contentType: "application/json", // send as JSON
         url: "http://localhost:4567/stocks/update/",
         data: JSON.stringify({
-          "id": "1",
-          "price": "112"
+          "id": this.get('id'),
+          "price": this.get('price')
+        })
+      })
+    },
+    newStock() {
+      $.ajax({
+        type: "POST",
+        ContentType: "application/json; charset=utf-8",
+        contentType: "application/json", // send as JSON
+        url: "http://localhost:4567/stocks/create/",
+        data: JSON.stringify({
+          "name": this.get('name'),
+          "price": this.get('price')
         })
       })
     }

@@ -1,10 +1,58 @@
 <ul>
   {{#each stocks.stocks as |stock|}}
     <div class="">
+      <li>{{stock.id}}</li>
       <li>{{stock.name}}</li>
       <li>{{stock.price}}</li>
     </div>
     <br>
   {{/each}}
 </ul>
-<h3><button {{action "buyStock"}}>Buy Apple</button></h3>
+
+<form {{action "buyStock" on="submit"}}>
+    Update a stock
+    <div class="control-label">
+      <label>Id</label>
+    </div>
+
+    <div class="controls">
+      {{input value=id type="text"}}
+    </div>
+
+    <div class="control-label">
+      <label>Price</label>
+    </div>
+
+    <div class="controls">
+      {{input value=price type="text"}}
+    </div>
+
+  <button type="submit" class="btn">Submit!</button>
+</form>
+
+<br>
+
+<form class="form-horizontal" {{action "newStock" on="submit"}}>
+  Create a stock
+  <div class="control-group">
+    <div class="control-label">
+      <label>Name</label>
+    </div>
+
+    <div class="controls">
+      {{input value=name type="text"}}
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="control-label">
+      <label>Price</label>
+    </div>
+
+    <div class="controls">
+      {{input value=price type="text"}}
+    </div>
+  </div>
+
+  <button type="submit" class="btn">Submit!</button>
+</form>
