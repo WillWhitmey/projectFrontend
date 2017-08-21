@@ -18,18 +18,16 @@ export default Ember.Component.extend({
 
   actions: {
     buyStock() {
+      console.log('hi'),
       $.ajax({
         type: "PUT",
-        url: "http://localhost:4567/stocks/update/",
         ContentType: "application/json; charset=utf-8",
-        dataType: "json",
-        crossOrigin: true,
-        cache: false,
-        // data: JSON.stringify({ "name": "Apple", "price": "22" })
-        body: {
+        contentType: "application/json", // send as JSON
+        url: "http://localhost:4567/stocks/update/",
+        data: JSON.stringify({
           "id": "1",
           "price": "7500"
-        }
+        })
       })
     }
   }
